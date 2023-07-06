@@ -1,5 +1,5 @@
 import React from 'react';
-import {ANNOUNCEMENT_TEXTS,} from '@/js/utils/texts';
+import {ANNOUNCEMENT_TEXTS,} from '@/js/utils/content.js';
 
 function Announcement(props) {
 	return (
@@ -9,7 +9,7 @@ function Announcement(props) {
 					<span className={ 'text-xl tablet:w-full tablet:mb-2 text-center' }>
 						{ ANNOUNCEMENT_TEXTS.ANNOUNCEMENT }
 					</span>
-					<button className={ 'bg-light-shade text-dark-accent font-bold py-2 px-4 rounded' }>
+					<button className={ 'main-button' }>
 						<a
 							href={ '' }>
 							{ ANNOUNCEMENT_TEXTS.CTA }
