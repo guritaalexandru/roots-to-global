@@ -7,6 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    @apply font-sans;
   }
   html,
   body {
@@ -29,6 +30,14 @@
 }
 
 @layer components {
+  /* Main container */
+  .page-container {
+    @apply w-full h-full max-h-[100dvh];
+  }
+  /*Content container */
+  .content-container {
+    @apply max-w-[1440px] w-full mx-auto px-5;
+  }
 }
 
 @layer utilities {

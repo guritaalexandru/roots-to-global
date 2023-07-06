@@ -1,0 +1,20 @@
+import React from 'react';
+import Announcement from '@/js/components/Public/Layout/Announcement.jsx';
+import BannerSection from '@/js/components/Public/Sections/BannerSection.jsx';
+import AboutSection from '@/js/components/Public/Sections/AboutSection.jsx';
+import HostSection from '@/js/components/Public/Sections/HostSection.jsx';
+import BookSection from '@/js/components/Public/Sections/BookSection.jsx';
+import ConnectSection from '@/js/components/Public/Sections/ConnectSection.jsx';
+
+export default function Home() {
+	return (
+		<main className="page-container">
+			<Announcement />
+			<BannerSection />
+			<AboutSection />
+			<HostSection />
+			<BookSection />
+			<ConnectSection />
+		</main>
+	);
+}
