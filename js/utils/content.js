@@ -13,8 +13,15 @@ export const BANNER_CONTENT = {
 
 export const HOST_CONTENT = {
 	TITLE: 'Host',
-	SUBTITLE: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
 	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
 	IMAGE_SRC: '/images/portrait.png',
 	IMAGE_ALT: 'Banner image',
+};
+
+export const CONNECT_CONTENT = {
+	TITLE: 'Connect with me',
+	FACEBOOK_LINK: 'https://www.facebook.com/',
+	LINKEDIN_LINK: 'https://www.linkedin.com/',
+	WHATSAPP_NUMBER: '07070707007',
+	EMAIL: 'asdf',
 };

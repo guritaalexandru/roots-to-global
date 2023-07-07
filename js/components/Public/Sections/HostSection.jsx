@@ -20,9 +20,12 @@ function HostSection(props) {
 						</div>
 					</div>
 					<div className={ 'w-1/2' }>
-						<h2 className={ 'text-4xl text-dark-shade font-bold' }>
+						<h2>
 							{HOST_CONTENT.TITLE}
 						</h2>
+						<p>
+							{HOST_CONTENT.DESCRIPTION}
+						</p>
 					</div>
 				</div>
 			</div>
