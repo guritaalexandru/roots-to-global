@@ -16,7 +16,7 @@ function BannerSection(props) {
 				</div>
 				<div className="content-container text-light-shade">
 					<div className={ 'flex flex-col justify-center h-[600px] w-1/2 tablet:w-full' }>
-						<h1 className="mb-6">
+						<h1 className="">
 							{BANNER_CONTENT.TITLE}
 						</h1>
 						<p className="mb-6">

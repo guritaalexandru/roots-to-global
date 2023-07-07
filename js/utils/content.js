@@ -12,8 +12,9 @@ export const BANNER_CONTENT = {
 };
 
 export const HOST_CONTENT = {
-	TITLE: 'Host',
-	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
+	TITLE: 'Enter a longer title here. Lorem ipsum dolor sit amet, consectetur',
+	SUBTITLE: 'Quisque pretium, magna ut bibendum bibendum, velit massa lobortis leo, sit amet iaculis justo mauris eu leo. Vivamus ultricies consequat bibendum.',
+	DESCRIPTION: 'Nulla feugiat convallis leo, sit amet rhoncus nulla. Proin pretium est dolor, sit amet tristique dolor vehicula in. Maecenas ultrices accumsan nunc, in pellentesque dolor elementum non.',
 	IMAGE_SRC: '/images/portrait.png',
 	IMAGE_ALT: 'Banner image',
 };
