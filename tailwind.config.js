@@ -29,7 +29,6 @@ module.exports = {
 			'dark-accent': '#6B6865',
 			'light-shade': '#F2F1F2',
 			'dark-shade': '#23343F',
-			'dark': '#23343F',
 		},
 	},
 	plugins: [],

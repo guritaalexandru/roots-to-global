@@ -10,3 +10,11 @@ export const BANNER_CONTENT = {
 	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
 	CTA: 'Book your place',
 };
+
+export const HOST_CONTENT = {
+	TITLE: 'Host',
+	SUBTITLE: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
+	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
+	IMAGE_SRC: '/images/portrait.png',
+	IMAGE_ALT: 'Banner image',
+};

@@ -14,12 +14,12 @@ function BannerSection(props) {
 						fill={ true }
 					/>
 				</div>
-				<div className="content-container">
-					<div className={ 'flex flex-col justify-center h-[500px] w-1/2 tablet:w-full' }>
-						<h1 className="text-5xl text-light-shade mb-6 font-bold">
+				<div className="content-container text-light-shade">
+					<div className={ 'flex flex-col justify-center h-[600px] w-1/2 tablet:w-full' }>
+						<h1 className="text-5xl mb-6 font-bold">
 							{BANNER_CONTENT.TITLE}
 						</h1>
-						<p className="text-xl text-light-shade mb-6">
+						<p className="text-xl mb-6">
 							{BANNER_CONTENT.DESCRIPTION}
 						</p>
 						<button className="main-button w-fit">
