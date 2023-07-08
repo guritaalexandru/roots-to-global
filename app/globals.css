@@ -13,7 +13,6 @@
   html,
   body {
     max-width: 100vw;
-    overflow-x: hidden;
   }
   h1 {
     @apply text-[48px] mb-6 font-bold text-justify;
@@ -27,7 +26,7 @@
   p {
     @apply text-[24px] font-medium text-justify;
   }
-  span{
+  span, label{
     @apply text-[24px] font-medium;
   }
   button {

@@ -72,3 +72,7 @@ export const ABOUT_CONTENT_T2 = {
 		}
 	],
 };
+
+export const BOOKING_CONTENT = {
+	TITLE: 'Book your place',
+};
