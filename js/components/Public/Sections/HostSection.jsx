@@ -18,7 +18,7 @@ function HostSection(props) {
 								height={ 1200 }
 							/>
 						</div>
-						<div className={ 'absolute rounded bottom-12 right-12 w-52 h-52 bg-main text-light-shade flex p-4' }>
+						<div className={ 'absolute rounded bottom-12 right-12 w-52 h-52 bg-main text-light-shade flex p-4 shadow-xl' }>
 							<div className={ 'self-center h-fit text-center' }>
 								<span className={ 'block text-[50px] font-bold' }>15</span>
 								<span className={ 'block' }>Years of experience</span>

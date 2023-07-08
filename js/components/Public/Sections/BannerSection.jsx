@@ -4,7 +4,8 @@ import {BANNER_CONTENT,} from '@/js/utils/content.js';
 
 function BannerSection(props) {
 	return (
-		<section id="BannerSection">
+		<section
+			id="BannerSection">
 			<div className="relative">
 				<div className="background-image">
 					<Image
