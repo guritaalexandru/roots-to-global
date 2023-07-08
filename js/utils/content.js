@@ -6,8 +6,8 @@ export const ANNOUNCEMENT_TEXTS = {
 export const BANNER_CONTENT = {
 	IMAGE_SRC: '/images/banner.jpg',
 	IMAGE_ALT: 'Banner image',
-	TITLE: 'Lorem ipsum',
-	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae',
+	TITLE: 'Lorem ipsum dolor sit amet',
+	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor',
 	CTA: 'Book your place',
 };
 
@@ -23,6 +23,6 @@ export const CONNECT_CONTENT = {
 	TITLE: 'Connect with me',
 	FACEBOOK_LINK: 'https://www.facebook.com/',
 	LINKEDIN_LINK: 'https://www.linkedin.com/',
-	WHATSAPP_NUMBER: '07070707007',
-	EMAIL: 'asdf',
+	WHATSAPP_NUMBER: '(+40) 721 234 567',
+	EMAIL: 'yourmail@mail.com',
 };

@@ -28,13 +28,15 @@ function ConnectSection(props) {
 							/>
 						</a>
 					</div>
-					<div>
-						<span>WhatsApp: </span>
-						<span>{CONNECT_CONTENT.WHATSAPP_NUMBER}</span>
-					</div>
-					<div>
-						<span>Mail: </span>
-						<span>{CONNECT_CONTENT.EMAIL}</span>
+					<div className={ 'flex justify-center space-x-12 mt-4' }>
+						<div>
+							<span>WhatsApp: </span>
+							<span>{CONNECT_CONTENT.WHATSAPP_NUMBER}</span>
+						</div>
+						<div>
+							<span>Mail: </span>
+							<span>{CONNECT_CONTENT.EMAIL}</span>
+						</div>
 					</div>
 				</div>
 			</div>
