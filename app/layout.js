@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter, } from 'next/font/google';
+import React from 'react';
 
 const inter = Inter({ subsets: ['latin'], });
 
@@ -22,6 +23,11 @@ export default function RootLayout({ children, }) {
 				<link
 					href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap"
 					rel="stylesheet"/>
+				<title>From Roots to Global Success</title>
+				<meta
+					name="description"
+					content="An exclusive online program catering to Romanians living and working abroad. Our program is specifically designed to help you leverage your cultural background to thrive professionally in diverse settings"
+				/>
 			</head>
 			<body className={ inter.className }>{children}</body>
 		</html>
