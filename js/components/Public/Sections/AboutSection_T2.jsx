@@ -9,7 +9,7 @@ function AboutSection_T2(props) {
 					<h2 className={ 'text-center' }>
 						{ABOUT_CONTENT_T2.TITLE}
 					</h2>
-					<div className={ 'flex tablet:flex-wrap justify-center pt-6 space-x-12' }>
+					<div className={ 'flex tablet:flex-wrap justify-center pt-6 space-x-12 tablet:space-x-0 tablet:space-y-6' }>
 						{
 							ABOUT_CONTENT_T2.T2_CARDS.map((card, index) => {
 								return (

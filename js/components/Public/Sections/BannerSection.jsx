@@ -16,7 +16,7 @@ function BannerSection(props) {
 					/>
 				</div>
 				<div className="content-container text-light-shade">
-					<div className={ 'flex flex-col py-[180px] laptop:py-[100px] w-[55%] m-tablet:w-[75%] tablet:w-full' }>
+					<div className={ 'flex flex-col py-[180px] laptop:py-[100px] tablet:py-[50px] w-[55%] m-tablet:w-[75%] tablet:w-full' }>
 						<h1 className="">
 							{BANNER_CONTENT.TITLE}
 						</h1>
