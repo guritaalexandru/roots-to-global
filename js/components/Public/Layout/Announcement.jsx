@@ -13,7 +13,7 @@ function Announcement(props) {
 					</span>
 					<button className={ 'main-button' }>
 						<a
-							href={ '' }>
+							href={ '#BookSection' }>
 							{ ANNOUNCEMENT_TEXTS.CTA }
 						</a>
 					</button>

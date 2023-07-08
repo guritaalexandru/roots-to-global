@@ -1,14 +1,16 @@
+const COMMON_CTA = 'Book your place';
+
 export const ANNOUNCEMENT_TEXTS = {
-	ANNOUNCEMENT: 'From roots to global success',
-	CTA: 'Book your place',
+	ANNOUNCEMENT: 'Empowering Romanian Professionals Abroad',
+	CTA: COMMON_CTA,
 };
 
 export const BANNER_CONTENT = {
 	IMAGE_SRC: '/images/banner.jpg',
 	IMAGE_ALT: 'Banner image',
-	TITLE: 'Lorem ipsum dolor sit amet',
-	DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor',
-	CTA: 'Book your place',
+	TITLE: 'From Roots to Global Success: Empowering Romanian Professionals Abroad',
+	DESCRIPTION: 'An exclusive online program catering to Romanians living and working abroad. Our program is specifically designed to help you leverage your cultural background to thrive professionally in diverse settings',
+	CTA: COMMON_CTA,
 };
 
 export const HOST_CONTENT = {
