@@ -14,13 +14,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			screens: {
-				'mobile': {'max': '380px',},
-				'tablet': {'max': '640px',},
-				'm-tablet': {'max': '820px',},
-				'laptop': {'max': '1025px',},
-				'laptop-m': {'max': '1200px',},
-				'desktop': {'max': '1400px',},
 				'wide': '1950px',
+				'desktop': {'max': '1440px',},
+				'laptop': {'max': '1200px',},
+				'm-tablet': {'max': '990px',},
+				'tablet': {'max': '640px',},
+				'mobile': {'max': '380px',},
 			},
 		},
 		colors: {

@@ -16,7 +16,7 @@ function BannerSection(props) {
 					/>
 				</div>
 				<div className="content-container text-light-shade">
-					<div className={ 'flex flex-col justify-center h-[600px] w-1/2 tablet:w-full' }>
+					<div className={ 'flex flex-col py-[180px] laptop:py-[100px] w-[55%] m-tablet:w-[75%] tablet:w-full' }>
 						<h1 className="">
 							{BANNER_CONTENT.TITLE}
 						</h1>
@@ -25,7 +25,7 @@ function BannerSection(props) {
 						</p>
 						<button className="main-button w-fit">
 							<a
-								href={ '' }>
+								href={ '#BookSection' }>
 								{BANNER_CONTENT.CTA}
 							</a>
 						</button>

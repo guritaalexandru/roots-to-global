@@ -13,17 +13,17 @@ function AboutSection(props) {
 					<p className={ 'text-center' }>
 						{ABOUT_CONTENT.DESCRIPTION}
 					</p>
-					<div className={ 'flex tablet:flex-wrap justify-center mt-6 space-x-6' }>
+					<div className={ 'flex m-tablet:flex-wrap justify-center mt-6 space-x-6 m-tablet:space-x-0' }>
 						{
 							ABOUT_CONTENT.T1_CARDS.map((card, index) => {
 								return (
 									<div
 										key={ index }
-										className={ 'bg-light-shade rounded text-dark-shade w-1/3 tablet:w-full mt-12 p-6 pb-8' }>
+										className={ 'bg-light-shade rounded text-dark-shade w-1/3 m-tablet:w-full m-tablet:max-w-[450px] mt-12 p-6 pb-8' }>
 										<div className={ 'relative h-64' }>
 											<div className={ 'absolute h-full w-full top-[-56px]' }>
 												<Image
-													className={ 'rounded-xl shadow-2xl' }
+													className={ 'object-cover rounded-xl shadow-2xl' }
 													src={ card.IMAGE_SRC }
 													alt={ card.IMAGE_ALT }
 													fill={ true }
@@ -34,7 +34,7 @@ function AboutSection(props) {
 											<h3 className={ '' }>
 												{card.TITLE}
 											</h3>
-											<p className={ 'text-[20px]' }>
+											<p className={ '' }>
 												{card.DESCRIPTION}
 											</p>
 										</div>

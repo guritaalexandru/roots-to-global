@@ -5,7 +5,7 @@ function Announcement(props) {
 	return (
 		<div
 			id={ 'AnnouncementSection' }
-			className={ 'h-8' }>
+			className={ 'h-14' }>
 			<div className={ 'bg-main text-light-shade border-b-2 fixed w-full z-50' }>
 				<div className={ 'content-container py-2.5 flex tablet:flex-wrap justify-between tablet:justify-center items-center' }>
 					<span className={ 'tablet:w-full tablet:mb-2 text-center' }>
