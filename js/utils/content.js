@@ -8,8 +8,8 @@ export const ANNOUNCEMENT_TEXTS = {
 export const BANNER_CONTENT = {
 	IMAGE_SRC: '/images/banner.jpg',
 	IMAGE_ALT: 'Banner image',
-	TITLE: 'From Roots to Global Success: Empowering Romanian Professionals Abroad',
-	DESCRIPTION: 'An exclusive online program catering to Romanians living and working abroad. Our program is specifically designed to help you leverage your cultural background to thrive professionally in diverse settings',
+	TITLE: 'De la cultură la succes!',
+	DESCRIPTION: 'Un program exclusiv dedicat românilor care trăiesc și lucrează în străinătate. De la cultură la succes vă ajută să vă înțelegeți comportamentele și cum să le valorificați pentru a reuși într-un mediu diferit!',
 	CTA: COMMON_CTA,
 };
 
@@ -36,8 +36,12 @@ export const ABOUT_CONTENT = {
 		{
 			IMAGE_SRC: '/images/1.jpg',
 			IMAGE_ALT: 'Image 1',
-			TITLE: 'Discover your true potential',
-			DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis',
+			TITLE: 'Cum facem tranziția?',
+			DESCRIPTION: 'Daca trăiești intr-o alta țară\n' +
+				'Daca simți ca ești diferit și ca vrei sa te integrezi \n' +
+				'Daca vrei sa intelegi ce poti face mai mult sau mai putin\n' +
+				'Daca încă nu ești impacat cu tine si radacinile tale\n' +
+				'Daca vrei sa ai succes în locul nou în care ești',
 		},
 		{
 			IMAGE_SRC: '/images/2.jpg',
