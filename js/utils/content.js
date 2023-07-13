@@ -1,4 +1,4 @@
-const COMMON_CTA = 'Book your place';
+const COMMON_CTA = 'Înscrie-te!';
 
 export const ANNOUNCEMENT_TEXTS = {
 	ANNOUNCEMENT: 'Empowering Romanian Professionals Abroad',
@@ -80,5 +80,5 @@ export const ABOUT_CONTENT_T2 = {
 };
 
 export const BOOKING_CONTENT = {
-	TITLE: 'Book your place',
+	TITLE: 'Înscrie-te acum!',
 };

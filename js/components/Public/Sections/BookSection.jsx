@@ -14,7 +14,7 @@ function BookSection(props) {
 							<label
 								htmlFor="name"
 								className="block mb-2">
-								Your name
+								Nume
 							</label>
 							<input
 								type="name"
@@ -27,7 +27,7 @@ function BookSection(props) {
 							<label
 								htmlFor="surname"
 								className="block mb-2 font-medium text-gray-900 dark:text-white">
-								Your surname
+								Prenume
 							</label>
 							<input
 								type="surname"
@@ -39,8 +39,9 @@ function BookSection(props) {
 						<div className="mb-6">
 							<label
 								htmlFor="email"
-								className="block mb-2 font-medium text-gray-900 dark:text-white">Your
-								email</label>
+								className="block mb-2 font-medium text-gray-900 dark:text-white">
+								E-mail
+							</label>
 							<input
 								type="email"
 								id="email"
@@ -52,7 +53,7 @@ function BookSection(props) {
 							<label
 								htmlFor="phone"
 								className="block mb-2 font-medium text-gray-900 dark:text-white">
-								Your phone number
+								Număr de telefon
 							</label>
 							<input
 								type="phone"
@@ -65,7 +66,7 @@ function BookSection(props) {
 							<label
 								htmlFor="countries"
 								className="block mb-2 font-medium text-gray-900 dark:text-white">
-								Select your country
+								Alege data
 							</label>
 							<select
 								id="countries"
@@ -78,7 +79,7 @@ function BookSection(props) {
 						</div>
 						<button
 							type="submit"
-							className="main-button bg-dark-shade text-light-shade">Submit
+							className="main-button bg-dark-shade text-light-shade">Trimite
 						</button>
 					</form>
 				</div>
