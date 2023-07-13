@@ -6,7 +6,7 @@ export const ANNOUNCEMENT_TEXTS = {
 };
 
 export const BANNER_CONTENT = {
-	IMAGE_SRC: '/images/banner.jpg',
+	IMAGE_SRC: '/images/banner.jpeg',
 	IMAGE_ALT: 'Banner image',
 	TITLE: 'De la cultură la succes!',
 	DESCRIPTION: 'Un program exclusiv dedicat românilor care trăiesc și lucrează în străinătate. De la cultură la succes vă ajută să vă înțelegeți comportamentele și cum să le valorificați pentru a reuși într-un mediu diferit!',
@@ -30,18 +30,14 @@ export const CONNECT_CONTENT = {
 };
 
 export const ABOUT_CONTENT = {
-	TITLE: 'What\'s it all about?',
-	DESCRIPTION: 'Aenean non justo non enim ultrices accumsan sed et mi. Vestibulum porttitor massa ac arcu eleifend scelerisque. Phasellus commodo dapibus semper. Duis tellus justo',
+	TITLE: 'Transformă cultura ta în avantaj competitiv!',
+	DESCRIPTION: 'Înscrie-te în programul nostru și învață cum să navighezi cu încredere și să îți construiești o carieră de succes în medii culturale diferite!',
 	T1_CARDS: [
 		{
 			IMAGE_SRC: '/images/1.jpg',
 			IMAGE_ALT: 'Image 1',
-			TITLE: 'Cum facem tranziția?',
-			DESCRIPTION: 'Daca trăiești intr-o alta țară\n' +
-				'Daca simți ca ești diferit și ca vrei sa te integrezi \n' +
-				'Daca vrei sa intelegi ce poti face mai mult sau mai putin\n' +
-				'Daca încă nu ești impacat cu tine si radacinile tale\n' +
-				'Daca vrei sa ai succes în locul nou în care ești',
+			TITLE: 'Intrebare intrebare?',
+			DESCRIPTION: 'Raspuns cu ce te putem ajuta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor. Proin pretium est dolor',
 		},
 		{
 			IMAGE_SRC: '/images/2.jpg',
@@ -59,22 +55,26 @@ export const ABOUT_CONTENT = {
 };
 
 export const ABOUT_CONTENT_T2 = {
-	TITLE: 'Why should you join?',
+	TITLE: 'Ce vom face?',
 	T2_CARDS: [
 		{
-			NUMBER: '01',
+			NUMBER: 'Workshop 1',
 			TITLE: 'Lorem ipsum dolor sit amet',
-			DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor',
+			DESCRIPTION: 'Tranzitia într-un mediu cultural nou\n' +
+				'Asteptari personale, esecuri culturale\n' +
+				'Despre singurătate',
 		},
 		{
-			NUMBER: '02',
+			NUMBER: 'Workshop 2',
 			TITLE: 'Lorem ipsum dolor sit amet',
-			DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor',
+			DESCRIPTION: 'Cum se formează cultura? \n' +
+				'Specificul culturii și educației în România',
 		},
 		{
-			NUMBER: '03',
+			NUMBER: 'Workshop 3',
 			TITLE: 'Lorem ipsum dolor sit amet',
-			DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor',
+			DESCRIPTION: 'Power distance\n' +
+				'Punctele tari și sensibilitatile legate de asta',
 		}
 	],
 };
