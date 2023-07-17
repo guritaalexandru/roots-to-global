@@ -43,6 +43,9 @@
   section {
     @apply shadow-2xl;
   }
+  .rte ul{
+    @apply list-none pl-0;
+  }
 }
 
 @layer components {
@@ -62,7 +65,7 @@
   }
 
   #Overlay {
-    @apply absolute top-0 left-0 w-full h-full bg-dark-shade bg-opacity-50;
+    @apply absolute top-0 left-0 w-full h-full bg-dark-shade bg-opacity-20;
   }
 
 }

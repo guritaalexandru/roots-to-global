@@ -36,20 +36,6 @@ function HostSection(props) {
 							<p className={ 'pb-5' } >
 								{HOST_CONTENT.DESCRIPTION}
 							</p>
-							<ul className={ 'list-disc' }>
-								<li>
-									Lorem ipsum
-								</li>
-								<li>
-									Lorem ipsum
-								</li>
-								<li>
-									Lorem ipsum
-								</li>
-								<li>
-									Lorem ipsum
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
