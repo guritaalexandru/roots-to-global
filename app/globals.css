@@ -65,7 +65,7 @@
   }
 
   #Overlay {
-    @apply absolute top-0 left-0 w-full h-full bg-dark-shade bg-opacity-20;
+    @apply absolute top-0 left-0 w-full h-full bg-light-shade bg-opacity-10;
   }
 }
 

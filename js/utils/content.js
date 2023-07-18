@@ -6,7 +6,7 @@ export const ANNOUNCEMENT_TEXTS = {
 };
 
 export const BANNER_CONTENT = {
-	IMAGE_SRC: '/images/banner6.jpg',
+	IMAGE_SRC: '/images/banner7.jpg',
 	IMAGE_ALT: 'Banner image',
 	TITLE: 'De la cultură la succes!',
 	DESCRIPTION: 'Un program exclusiv dedicat românilor care trăiesc și lucrează în străinătate. De la cultură la succes vă ajută să vă înțelegeți comportamentele și cum să le valorificați pentru a reuși într-un mediu diferit!',

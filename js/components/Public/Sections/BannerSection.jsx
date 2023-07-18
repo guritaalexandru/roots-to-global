@@ -9,19 +9,19 @@ function BannerSection(props) {
 			<div className="relative">
 				<div className="background-image">
 					<Image
-						className={ 'object-cover tablet:object-left' }
+						className={ 'object-cover object-banner' }
 						src={ BANNER_CONTENT.IMAGE_SRC }
 						alt={ BANNER_CONTENT.IMAGE_ALT }
 						fill={ true }
 					/>
 					<div id={ 'Overlay' }></div>
 				</div>
-				<div className="content-container text-light-shade">
+				<div className="content-container text-dark-shade">
 					<div className={ 'flex flex-col py-[180px] laptop:py-[100px] tablet:py-[50px] w-[55%] m-tablet:w-[75%] tablet:w-full' }>
-						<h1 className="">
+						<h1 className="font-bold">
 							{BANNER_CONTENT.TITLE}
 						</h1>
-						<p className="mb-6">
+						<p className="mb-6 font-bold">
 							{BANNER_CONTENT.DESCRIPTION}
 						</p>
 						<button className="main-button w-fit">

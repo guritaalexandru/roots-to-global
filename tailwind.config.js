@@ -21,6 +21,9 @@ module.exports = {
 				'tablet': {'max': '640px',},
 				'mobile': {'max': '380px',},
 			},
+			objectPosition: {
+				'banner': '0% 20%',
+			},
 		},
 		colors: {
 			'main': '#7DA2B0',
