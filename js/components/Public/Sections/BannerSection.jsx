@@ -17,7 +17,7 @@ function BannerSection(props) {
 					<div id={ 'Overlay' }></div>
 				</div>
 				<div className="content-container text-dark-shade">
-					<div className={ 'flex flex-col py-[180px] laptop:py-[100px] tablet:py-[50px] w-[55%] m-tablet:w-[75%] tablet:w-full' }>
+					<div className={ 'flex flex-col py-[180px] laptop:pt-[160px] laptop:pb-[60px] tablet:pt-[100px] tablet:pb-[20px] w-[55%] m-tablet:w-[75%] tablet:w-full' }>
 						<h1 className="font-bold">
 							{BANNER_CONTENT.TITLE}
 						</h1>

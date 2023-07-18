@@ -63,9 +63,14 @@
   .main-button {
     @apply bg-light-shade text-dark-shade font-bold py-2.5 px-4 rounded shadow-xl;
   }
-
+  #BannerSection h1{
+    @apply text-[44px] laptop:text-[36px] m-tablet:text-[32px] mb-6 font-bold;
+  }
+  #BannerSection p{
+    @apply text-[24px] laptop:text-[20px];
+  }
   #Overlay {
-    @apply absolute top-0 left-0 w-full h-full bg-light-shade bg-opacity-10;
+    @apply absolute top-0 left-0 w-full h-full bg-light-shade bg-opacity-20;
   }
 }
 
