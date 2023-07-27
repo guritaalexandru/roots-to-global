@@ -6,20 +6,21 @@ export const ANNOUNCEMENT_TEXTS = {
 };
 
 export const BANNER_CONTENT = {
-	IMAGE_SRC: '/images/banner7.jpg',
+	IMAGE_SRC: '/images/banner-final.jpg',
 	IMAGE_ALT: 'Banner image',
 	TITLE: 'De la cultură la succes!',
-	DESCRIPTION: 'Un program exclusiv dedicat românilor care trăiesc și lucrează în străinătate. De la cultură la succes vă ajută să vă înțelegeți comportamentele și cum să le valorificați pentru a reuși într-un mediu diferit!',
+	DESCRIPTION: 'Un program exclusiv dedicat românilor care trăiesc și lucrează în străinătate. "De la cultură la succes" vă ajută să vă înțelegeți comportamentele și cum să le valorificați pentru a reuși într-un mediu diferit!',
 	CTA: COMMON_CTA,
 };
 
 export const HOST_CONTENT = {
 	TITLE: 'Despre mine: Mihaela Reese, 15 ani experiență în dezvoltarea liderilor din Europa',
-	SUBTITLE: 'Putem adauga o zicala / un citat care iti place aici, care te reprezinta',
-	DESCRIPTION: 'Sunt Mihaela Reese și de 15 ani facilitez dezvoltarea liderilor din Europa. Experiența mea profesională de coach și facilitator mi-a dat oportunitatea să lucrez cu oameni și organizații din aproape toate țările din Europa. Am observat cum multe din dificultățile lor veneau din faptul că făceau lucruri normale la ei acasă, dar primite diferit în alte contexte și cu oameni din alte culturi.\n' +
+	SUBTITLE: 'Radacinile nu sunt intr-un peisaj sau o tara sau oameni, ci sunt inlauntrul tau - Isabel Allende',
+	DESCRIPTION: 'Cred cu tarie ca fiecare cultura este buna in felul ei distinct. Cultura noastra ne-a dat lucruri unice și puncte forte remarcabile. Sunt Mihaela Reese si imi doresc sa iti arat cum sa iti intelegi radacinile si folosesti puterea pe care o ai la modul potrivit. Desi de 15 ani facilitez dezvoltarea liderilor din Europa, acest program este pentru orice experienta profesionala. \n' +
+		'In activitatea mea am observat cum multe din dificultățile liderilor veneau din faptul ca făceau lucruri normale la ei acasă dar neobisnuite în alte contexte și pentru oamenii din alte culture cu care interactionau. Conflicte, neintelegeri, excese, sau singuratate vin din aceste moduri diferite de a ne raporta la lumea in care traim.\n' +
 		'\n' +
-		'În plan personal, sunt căsătorită cu un olandez și de câțiva ani trăiesc în Olanda. E adevărată zicala că cel mai bun mod de a te cunoaște pe tine este să trăiești în altă țară. Aceasta este cu atât mai adevărată când te căsătorești cu un partener dintr-o altă cultură.',
-	IMAGE_SRC: '/images/portrait.png',
+		'Acum cativa ani m-am mutat in Olanda impreuna co sotul meu (olandez). E adevărata zicala ca cel mai bun mod de a te cunoaște pe tine este sa trăiești în alta țară. Aceasta este cu atât mai adevărata când te căsătorești cu un partener dintr-o alta cultura. ',
+	IMAGE_SRC: '/images/profile.jpeg',
 	IMAGE_ALT: 'Banner image',
 };
 
