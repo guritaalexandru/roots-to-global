@@ -72,6 +72,12 @@
   #Overlay {
     @apply absolute top-0 left-0 w-full h-full bg-dark-shade bg-opacity-20;
   }
+  .disc ul{
+    @apply list-disc;
+  }
+  .disc p{
+    @apply mb-2;
+  }
 }
 
 @layer utilities {

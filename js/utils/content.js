@@ -39,20 +39,33 @@ export const ABOUT_CONTENT = {
 		{
 			IMAGE_SRC: '/images/1.jpg',
 			IMAGE_ALT: 'Image 1',
-			TITLE: 'Intrebare intrebare?',
-			DESCRIPTION: 'Raspuns cu ce te putem ajuta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor. Proin pretium est dolor',
+			TITLE: 'Pentru cine este?',
+			DESCRIPTION: '<ul>' +
+				'<li>Trăiești într-o alta țară decat Romania</li>' +
+				'<li>Simți că ești diferit și vrei să te integrezi mai repede</li>' +
+				'<li>Vrei să ai succes în locul nou în care ești</li>' +
+			'</ul>',
 		},
 		{
 			IMAGE_SRC: '/images/2.jpg',
 			IMAGE_ALT: 'Image 2',
-			TITLE: 'Unlock your inner power',
-			DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit massa lobortis. Proin pretium est dolor. Proin pretium est dolor',
+			TITLE: 'Cum ajută?',
+			DESCRIPTION: '<ul>' +
+				'<li>Vei învăța cum să abordezi practic procesul tău de integrare</li>' +
+				'<li>Înțelegi cum să descifrezi cultura în care trăiești</li>' +
+				'<li>Folosești cu încredere punctele tale tari</li>' +
+			'</ul>',
 		},
 		{
 			IMAGE_SRC: '/images/3.jpg',
 			IMAGE_ALT: 'Image 3',
-			TITLE: 'Find your true self',
-			DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+			TITLE: 'Ce facem împreună?',
+			DESCRIPTION: '<p>Vom avea 3 workshopuri, fiecare de o ora și jumătate. Fiecare acoperă o temă importantă în tranzitia și integrarea într-o altă cultură:</p>' +
+				'<ul>' +
+				'<li>Tranziția, Cultura noastră</li>' +
+				'<li>Relația cu autoritatea, integrare socială</li>' +
+				'<li>Planificare și relaxare</li>' +
+			'</ul>',
 		}
 	],
 };

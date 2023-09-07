@@ -1,6 +1,7 @@
 import React from 'react';
 import {ABOUT_CONTENT,} from '@/js/utils/content';
 import Image from 'next/image';
+import parse from 'html-react-parser';
 
 function AboutSection(props) {
 	return (
@@ -34,8 +35,8 @@ function AboutSection(props) {
 											<h3 className={ '' }>
 												{card.TITLE}
 											</h3>
-											<p className={ '' }>
-												{card.DESCRIPTION}
+											<p className={ 'disc' }>
+												{parse(card.DESCRIPTION)}
 											</p>
 										</div>
 									</div>
