@@ -35,9 +35,7 @@ function AboutSection(props) {
 											<h3 className={ '' }>
 												{card.TITLE}
 											</h3>
-											<p className={ 'disc' }>
-												{parse(card.DESCRIPTION)}
-											</p>
+											<div className={ 'disc' }>{parse(card.DESCRIPTION)}</div>
 										</div>
 									</div>
 								);

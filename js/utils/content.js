@@ -74,55 +74,39 @@ export const ABOUT_CONTENT_T2 = {
 	TITLE: 'Ce vom discuta împreună?',
 	T2_CARDS: [
 		{
+			IMAGE_SRC: '/images/4.jpg',
+			IMAGE_ALT: 'Image 1',
 			NUMBER: 'Workshop 1',
-			TITLE: 'Tranziția',
+			TITLE: 'Tranziția, cultura noastra',
 			DESCRIPTION: '<ul>' +
-				'<li>Tranziția într-un mediu cultural nou</li>' +
+				'<li>Tranziția într-un mediu cultural nou, intr-o tara diferita</li>' +
+				'<li>Specificul culturii și educației în România si tiparele pe care le purtam cu noi</li>' +
 				'<li>Așteptări personale, eșecuri culturale</li>' +
 				'<li>Despre singurătate</li>' +
+				'<li>Strategii pentru intelegerea nevoilor personale si solutii individualizate</li>' +
 				'</ul>',
 		},
 		{
+			IMAGE_SRC: '/images/5.jpg',
+			IMAGE_ALT: 'Image 1',
 			NUMBER: 'Workshop 2',
-			TITLE: 'Cultură vs educație',
+			TITLE: 'Relația cu autoritatea, integrare sociala',
 			DESCRIPTION: '<ul>' +
-				'<li>Cum se formează cultura</li>' +
-				'<li>Specificul culturii și educației în România</li>' +
-				'<li>Cine sunt și cum port tiparele culturale</li>' +
-				'</ul>',
-		},
-		{
-			NUMBER: 'Workshop 3',
-			TITLE: 'Relația cu autoritatea',
-			DESCRIPTION: '<ul>' +
-				'<li>Conștientizarea influenței asupra comportamentelor noastre</li>' +
+				'<li>Autoritatea in cultura noastra si cum ne influențează gândirea, comportamentul și interacțiunea cu ceilalti oameni</li>' +
+				'<li>Intelegerea diferentelor între culturi cand vine vorba de autoritate si relatii sociale</li>' +
 				'<li>Gestionarea tiparelor personale în relația cu autoritatea</li>' +
-				'<li>Strategii de comunicare și acțiune</li>' +
+				'<li>Cum sa iti faci prieteni sau sa devii parte din diferite comunitati</li>' +
+				'<li>Strategii de comunicare si acțiune</li>' +
 				'</ul>',
 		},
 		{
-			NUMBER: 'Workshop 4',
-			TITLE: 'Eu și ceilalți',
+			IMAGE_SRC: '/images/6.jpg',
+			IMAGE_ALT: 'Image 1',
+			NUMBER: 'Workshop 3',
+			TITLE: 'Familie, planificare si relaxare',
 			DESCRIPTION: '<ul>' +
-				'<li>Cum influențează gândirea, comportamentul și interacțiunea</li>' +
-				'<li>Înțelegerea diferențelor de valori între culturi</li>' +
-				'<li>Strategii de comunicare și acțiune care să respecte diferențele</li>' +
-				'</ul>',
-		},
-		{
-			NUMBER: 'Workshop 5',
-			TITLE: 'Genul și implicațiile lui',
-			DESCRIPTION: '<ul>' +
-				'<li>Întelegerea rolurilor de gen și a influențelor în mediul social și de lucru</li>' +
-				'<li>Valorile culturale și impactul lor</li>' +
-				'<li>Strategii pentru o atitudine echitabilă</li>' +
-				'</ul>',
-		},
-		{
-			NUMBER: 'Workshop 6',
-			TITLE: 'Planificare si relaxare',
-			DESCRIPTION: '<ul>' +
-				'<li>Timpul și valoarea lui în diferite culturi</li>' +
+				'<li>Intelegerea rolurilor in familie si a mostenirilor culturale</li>' +
+				'<li>Strategii pentru o atitudine echitabila intr-o cultura diferita</li>' +
 				'<li>Permisivitatea, control social și restricțiile culturale</li>' +
 				'<li>Strategii pentru integrare de success</li>' +
 				'</ul>',

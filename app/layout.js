@@ -29,7 +29,9 @@ export default function RootLayout({ children, }) {
 					content="An exclusive online program catering to Romanians living and working abroad. Our program is specifically designed to help you leverage your cultural background to thrive professionally in diverse settings"
 				/>
 			</head>
-			<body className={ inter.className }>{children}</body>
+			<body className={ inter.className }>
+				<div>{children}</div>
+			</body>
 		</html>
 	);
 }
