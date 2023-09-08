@@ -15,7 +15,7 @@ export default function Home() {
 			<AboutSection />
 			<HostSection />
 			<AboutSection_T2 />
-			{/*<BookSection />*/}
+			<BookSection />
 			<ConnectSection />
 		</main>
 	);
