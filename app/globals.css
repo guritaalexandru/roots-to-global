@@ -43,9 +43,6 @@
   section {
     @apply shadow-2xl;
   }
-  .rte ul{
-    @apply list-none pl-0;
-  }
 }
 
 @layer components {

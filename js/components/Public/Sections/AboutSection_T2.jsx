@@ -11,15 +11,15 @@ function AboutSection_T2(props) {
 					<h2 className={ 'text-center' }>
 						{ABOUT_CONTENT_T2.TITLE}
 					</h2>
-					<div className={ 'flex flex-wrap justify-center pt-6 space-y-6' }>
+					<div className={ 'flex flex-wrap justify-center pt-6 space-y-6 tablet:space-y-12' }>
 						{
 							ABOUT_CONTENT_T2.T2_CARDS.map((card, index) => {
 								return (
 									<div
 										key={ index }
-										className={ 'w-full flex bg-light-shade rounded text-dark-shade py-6 ml-[56px]' }>
-										<div className={ 'relative h-72 w-1/3' }>
-											<div className={ 'absolute h-full w-full left-[-56px]' }>
+										className={ 'w-full flex tablet:flex-wrap bg-light-shade rounded text-dark-shade py-6 pr-6 ml-[56px] tablet:ml-0 tablet:p-6 tablet:pb-8 tablet:max-w-[450px]' }>
+										<div className={ 'relative h-72 tablet:h-64 w-1/3 m-tablet:w-5/12 tablet:w-full' }>
+											<div className={ 'absolute h-full w-full left-[-56px] tablet:left-0 tablet:top-[-56px]' }>
 												<Image
 													className={ 'object-cover rounded-xl shadow-2xl' }
 													src={ card.IMAGE_SRC }
@@ -28,11 +28,11 @@ function AboutSection_T2(props) {
 												/>
 											</div>
 										</div>
-										<div className={ 'flex flex-col justify-center' }>
+										<div className={ 'flex flex-col justify-center w-2/3 m-tablet:w-7/12 tablet:w-full tablet:mt-[-28px]' }>
 											<h3 className={ '' }>
 												{card.NUMBER} - {card.TITLE}
 											</h3>
-											<div className={ 'rte disc' }>{parse(card.DESCRIPTION)}</div>
+											<div className={ 'disc' }>{parse(card.DESCRIPTION)}</div>
 										</div>
 									</div>
 								);
