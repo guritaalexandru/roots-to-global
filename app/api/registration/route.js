@@ -39,8 +39,9 @@ const handlePayment = async registrationId => {
 
 export async function GET(request) {
 	try{
-		const query = request.query;
-		const registrationId = query?.id;
+		console.log('Incoming request: ', request.url);
+		const url = new URL(request.url);
+		const registrationId = url.searchParams.get('id');
 
 		if (!registrationId) {
 			throw new Error('Registration not found');
