@@ -28,7 +28,7 @@ const handlePayment = async registrationId => {
 		},
 		description: `Order #${registrationId}`,
 		redirectUrl: `${process.env.FRONTEND_URL}/book?id=${registrationId}`,
-		webhookUrl: `${process.env.FRONTEND_URL}/payments/webhook`,
+		webhookUrl: `${process.env.FRONTEND_URL}/api/payments/webhook`,
 		metadata: {
 			order_id: registrationId,
 		},
