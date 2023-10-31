@@ -2,6 +2,10 @@ import { NextResponse, } from 'next/server';
 import {postRegistration,} from '@/js/utils/serverCalls';
 
 export async function POST(request) {
+	console.log('MOLLIE webhook request', request);
+	console.log('MOLLIE webhook request body', request.body);
+	const dbPostResponse = await postRegistration(body);
+
 	const body = await request.json();
 	const paymentId = body.id;
 	console.log('MOLLIE paymentId', paymentId);
