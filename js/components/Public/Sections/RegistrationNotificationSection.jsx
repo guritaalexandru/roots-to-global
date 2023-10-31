@@ -49,7 +49,7 @@ export default function RegistrationNotificationSection() {
 
 	return (
 		<main className="page-container relative">
-			<div className="flex justify-center items-center h-screen">
+			<div className="flex justify-center items-center h-screen text-justify p-36">
 				<h1 className="text-4xl">{message}</h1>
 			</div>
 		</main>
