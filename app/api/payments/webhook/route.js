@@ -6,9 +6,9 @@ export async function POST(request) {
 	const mollieClient = createMollieClient({ apiKey: process.env.MOLLIE_API_KEY, });
 
 	const body = await request.formData();
+	console.log('MOLLIE body', body);
 	const paymentId = body.get('id');
-	const paymentMetadata = body.get('metadata');
-	const registrationId = paymentMetadata.order_id;
+	const registrationId = body.get('metadata[order_id]');
 
 	console.log('MOLLIE paymentId', paymentId);
 	console.log('MOLLIE registrationId', registrationId);
