@@ -31,16 +31,16 @@ export default function RegistrationNotificationSection() {
 	else if(!bookingData?.registrationId){
 		message = 'Acest număr de înregistrare nu a fost găsit';
 	}
-	else if(bookingData?.status === 'expired'){
+	else if(bookingData?.paymentStatus === 'expired'){
 		message = `Înregistrarea cu numărul ${bookingData?.registrationId} a expirat.`;
 	}
-	else if(bookingData?.status === 'failed'){
+	else if(bookingData?.paymentStatus === 'failed'){
 		message = `Înregistrarea cu numărul ${bookingData?.registrationId} a eșuat.`;
 	}
-	else if(bookingData?.status === 'cancelled'){
+	else if(bookingData?.paymentStatus === 'cancelled'){
 		message = `Înregistrarea cu numărul ${bookingData?.registrationId} a fost anulată.`;
 	}
-	else if(bookingData?.status === 'paid'){
+	else if(bookingData?.paymentStatus === 'paid'){
 		message = `Înregistrarea cu numărul ${bookingData?.registrationId} a fost confirmată cu succes! Vei primi un email cu detaliile înregistrării pe adresa ${bookingData?.email}.`;
 	}
 	else{
