@@ -2,46 +2,56 @@
 
 import React from 'react';
 import {BOOKING_CONTENT,} from '@/js/utils/content.js';
-import {redirect,} from 'next/navigation';
+import { useRouter, } from 'next/navigation';
 
 function BookSection(props) {
 	const [sendingForm, setSendingForm] = React.useState(false);
+	const router = useRouter();
 
 	const handleBooking = async event =>  {
-		event.preventDefault();
+		try{
+			event.preventDefault();
 
-		setSendingForm(true);
+			setSendingForm(true);
 
-		const name = event.target.name.value;
-		const surname = event.target.surname.value;
-		const email = event.target.email.value;
-		const phone = event.target.phone.value;
-		const time = event.target.time.value;
+			const name = event.target.name.value;
+			const surname = event.target.surname.value;
+			const email = event.target.email.value;
+			const phone = event.target.phone.value;
+			const time = event.target.time.value;
 
-		const bookingObj = {
-			name,
-			surname,
-			email,
-			phone,
-			time,
-		};
+			const bookingObj = {
+				name,
+				surname,
+				email,
+				phone,
+				time,
+			};
 
-		//send bookingObj to backend
-		const registrationResponse = await fetch('/api/registration', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(bookingObj),
-		});
-		const registrationResponseData = await registrationResponse.json();
+			//send bookingObj to backend
+			const registrationResponse = await fetch('/api/registration', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(bookingObj),
+			});
+			const registrationResponseData = await registrationResponse.json();
 
-		setSendingForm(false);
+			setSendingForm(false);
 
-		const paymentUrl = registrationResponseData?.paymentUrl;
+			const paymentUrl = registrationResponseData?.paymentUrl;
+			console.log(paymentUrl);
 
-		if(paymentUrl){
-			redirect(paymentUrl);
+			if(paymentUrl){
+				router.push(paymentUrl);
+			}
+		}
+		catch(error){
+			console.log(error);
+		}
+		finally{
+			setSendingForm(false);
 		}
 	};
 
