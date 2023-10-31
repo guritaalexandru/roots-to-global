@@ -37,6 +37,42 @@ const handlePayment = async registrationId => {
 	return payment;
 };
 
+export async function GET(request) {
+	try{
+		const query = request.query;
+		const registrationId = query?.id;
+
+		if (!registrationId) {
+			throw new Error('Registration not found');
+		}
+
+		const dbGetResponse = await getRegistrationById(registrationId);
+		if (!dbGetResponse) {
+			throw new Error('Registration not found');
+		}
+
+		const paymentStatus = dbGetResponse.paymentStatus;
+		if (!paymentStatus) {
+			throw new Error('Payment not found');
+		}
+
+		return NextResponse.json(
+			{
+				message: 'Payment found',
+				paymentStatus: paymentStatus,
+				name: dbGetResponse.name,
+				email: dbGetResponse.email,
+				surname: dbGetResponse.surname,
+				registrationId: registrationId,
+			},
+			{ status: 200, });
+	}
+	catch(error) {
+		console.error(error);
+		return NextResponse.json({ message: error.message, }, { status: 400, });
+	}
+}
+
 export async function POST(request) {
 	try{
 		const body = await request.json();
