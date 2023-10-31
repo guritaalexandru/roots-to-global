@@ -2,37 +2,49 @@
 
 import React from 'react';
 import {BOOKING_CONTENT,} from '@/js/utils/content.js';
-
-const handleBooking = async event =>  {
-	event.preventDefault();
-
-	const name = event.target.name.value;
-	const surname = event.target.surname.value;
-	const email = event.target.email.value;
-	const phone = event.target.phone.value;
-	const time = event.target.time.value;
-
-	const bookingObj = {
-		name,
-		surname,
-		email,
-		phone,
-		time,
-	};
-
-	//send bookingObj to backend
-	const response = await fetch('/api/registration', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(bookingObj),
-	});
-	const data = await response.json();
-	console.log(data);
-};
+import {redirect,} from 'next/navigation';
 
 function BookSection(props) {
+	const [sendingForm, setSendingForm] = React.useState(false);
+
+	const handleBooking = async event =>  {
+		event.preventDefault();
+
+		setSendingForm(true);
+
+		const name = event.target.name.value;
+		const surname = event.target.surname.value;
+		const email = event.target.email.value;
+		const phone = event.target.phone.value;
+		const time = event.target.time.value;
+
+		const bookingObj = {
+			name,
+			surname,
+			email,
+			phone,
+			time,
+		};
+
+		//send bookingObj to backend
+		const registrationResponse = await fetch('/api/registration', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(bookingObj),
+		});
+		const registrationResponseData = await registrationResponse.json();
+
+		setSendingForm(false);
+
+		const paymentUrl = registrationResponseData?.paymentUrl;
+
+		if(paymentUrl){
+			redirect(paymentUrl);
+		}
+	};
+
 	return (
 		<section id={ 'BookSection' }>
 			<div className={ 'bg-light-shade text-dark-shade' }>
@@ -112,7 +124,12 @@ function BookSection(props) {
 						</div>
 						<button
 							type="submit"
-							className="main-button bg-dark-shade text-light-shade">Trimite
+							className="main-button bg-dark-shade text-light-shade">
+							{
+								sendingForm
+									? 'Se trimite...'
+									: 'Trimite'
+							}
 						</button>
 					</form>
 				</div>
