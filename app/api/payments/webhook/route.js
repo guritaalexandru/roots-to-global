@@ -4,12 +4,12 @@ import {postRegistration,} from '@/js/utils/serverCalls';
 export async function POST(request) {
 	console.log('MOLLIE webhook request', request);
 	console.log('MOLLIE webhook request body', request.body);
-	const dbPostResponse = await postRegistration(body);
+	const dbPostResponse1 = await postRegistration(body);
 
 	const body = await request.json();
 	const paymentId = body.id;
 	console.log('MOLLIE paymentId', paymentId);
-	const dbPostResponse = await postRegistration(body);
+	const dbPostResponse2 = await postRegistration(body);
 
 	const { createMollieClient, } = require('@mollie/api-client');
 	const mollieClient = createMollieClient({ apiKey: process.env.MOLLIE_API_KEY, });
@@ -17,7 +17,7 @@ export async function POST(request) {
 	const payment = await mollieClient.payments.get(paymentId);
 	console.log('MOLLIE payment', payment);
 
-	const dbPostResponse2 = await postRegistration(payment);
+	const dbPostResponse3 = await postRegistration(payment);
 
 	return NextResponse.json({ message: 'Success', }, { status: 200, });
 }
