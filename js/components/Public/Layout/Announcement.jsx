@@ -11,12 +11,12 @@ function Announcement(props) {
 					<span className={ 'tablet:w-full tablet:mb-2 text-center' }>
 						{ ANNOUNCEMENT_TEXTS.ANNOUNCEMENT }
 					</span>
-					<button className={ 'main-button' }>
-						<a
-							href={ '#BookSection' }>
+					<a
+						href={ '#BookSection' }>
+						<button className={ 'main-button' }>
 							{ ANNOUNCEMENT_TEXTS.CTA }
-						</a>
-					</button>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
 import { NextResponse, } from 'next/server';
-import {getRegistrationById, postRegistration, updateRegistrationById,} from '@/js/utils/serverCalls';
+import {getRegistrationById, postRegistration, updateRegistrationById,} from '@/js/utils/serverCalls.js';
+import {REGISTRATION_TYPES,} from '@/js/utils/constants.js';
 
 const getRegistrationObjectFromBody = body => {
 	const registrationObject = {
@@ -7,24 +8,43 @@ const getRegistrationObjectFromBody = body => {
 		email: body.email,
 		surname: body.surname,
 		phone: body.phone,
-		time: body.time,
+		choice: body.choice,
 	};
 
-	if(!registrationObject.name || !registrationObject.email || !registrationObject.surname || !registrationObject.phone || !registrationObject.time) {
+	if(!registrationObject.name || !registrationObject.email || !registrationObject.surname || !registrationObject.phone || !registrationObject.time || !registrationObject.choice) {
 		throw new Error('Missing registration data');
+	}
+
+	// if choice is not in the list of choices from the constants file, throw an error
+	if(!Object.values(REGISTRATION_TYPES).includes(registrationObject.choice)) {
+		throw new Error('Invalid registration choice');
 	}
 
 	return registrationObject;
 };
 
-const handlePayment = async registrationId => {
+const handlePayment = async (registrationId, registrationType) => {
 	const { createMollieClient, } = require('@mollie/api-client');
 	const mollieClient = createMollieClient({ apiKey: process.env.MOLLIE_API_KEY, });
+
+	let amount = '';
+	switch(registrationType) {
+		case REGISTRATION_TYPES.COMBO:
+			amount = '10.00';
+			break;
+		case REGISTRATION_TYPES.WORKSHOP_1:
+		case REGISTRATION_TYPES.WORKSHOP_2:
+		case REGISTRATION_TYPES.WORKSHOP_3:
+			amount = '5.00';
+			break;
+		default:
+			throw new Error('Invalid registration type');
+	}
 
 	const payment = await mollieClient.payments.create({
 		amount: {
 			currency: 'EUR',
-			value: '10.00',
+			value: amount,
 		},
 		description: `Order #${registrationId}`,
 		redirectUrl: `${process.env.FRONTEND_URL}/book?id=${registrationId}`,
@@ -85,9 +105,7 @@ export async function POST(request) {
 			throw new Error('Registration failed');
 		}
 
-		// const dbGetResponse = await getRegistrationById(newRegistrationId);
-
-		const payment = await handlePayment(newRegistrationId);
+		const payment = await handlePayment(newRegistrationId, registrationObject.choice);
 		if (!payment) {
 			throw new Error('Payment failed');
 		}

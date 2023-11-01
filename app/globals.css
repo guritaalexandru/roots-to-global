@@ -60,6 +60,9 @@
   .main-button {
     @apply bg-light-shade text-dark-shade font-bold py-2.5 px-4 rounded shadow-xl;
   }
+  .main-button-register{
+    @apply main-button bg-dark-shade text-light-shade;
+  }
   #BannerSection h1{
     @apply text-[44px] laptop:text-[36px] m-tablet:text-[32px] mb-6 font-bold;
   }

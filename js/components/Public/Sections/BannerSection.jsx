@@ -24,12 +24,12 @@ function BannerSection(props) {
 						<p className="mb-6 font-bold">
 							{BANNER_CONTENT.DESCRIPTION}
 						</p>
-						<button className="main-button w-fit">
-							<a
-								href={ '#BookSection' }>
+						<a
+							href={ '#BookSection' }>
+							<button className="main-button w-fit">
 								{BANNER_CONTENT.CTA}
-							</a>
-						</button>
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
