@@ -74,7 +74,6 @@ function BookSection(props) {
 								type="name"
 								id="name"
 								className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-								placeholder="John"
 								required/>
 						</div>
 						<div className="mb-6">
@@ -87,7 +86,6 @@ function BookSection(props) {
 								type="surname"
 								id="surname"
 								className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-								placeholder="Doe"
 								required/>
 						</div>
 						<div className="mb-6">
@@ -100,7 +98,6 @@ function BookSection(props) {
 								type="email"
 								id="email"
 								className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-								placeholder="name@flowbite.com"
 								required/>
 						</div>
 						<div className="mb-6">
@@ -113,8 +110,47 @@ function BookSection(props) {
 								type="phone"
 								id="phone"
 								className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-								placeholder=" +40 721 123 456"
 								required/>
+						</div>
+						<div className={ 'mb-6 flex' }>
+							<input
+								type="checkbox"
+								id="gdpr"
+								name="gdpr"
+								className="mr-2"
+								required/>
+							<label
+								htmlFor="gdpr"
+								className="block font-medium text-gray-900 dark:text-white">
+								{'Am citit și sunt de acord cu '}
+								<a
+									target="_blank"
+									href={ '/termeni-si-conditii' }
+									className="underline"
+									rel="noreferrer">
+									termenii și condițiile
+								</a>
+							</label>
+						</div>
+						<div className={ 'mb-6 flex' }>
+							<input
+								type="checkbox"
+								id="terms"
+								name="terms"
+								className="mr-2"
+								required/>
+							<label
+								htmlFor="terms"
+								className="block font-medium text-gray-900 dark:text-white">
+								{'Am citit și sunt de acord cu '}
+								<a
+									target="_blank"
+									href={ '/gdpr' }
+									className="underline"
+									rel="noreferrer">
+									politica de confidențialitate
+								</a>
+							</label>
 						</div>
 						<div className={ 'grid grid-cols-3 tablet:grid-cols-1 grid-rows-4 gap-2' }>
 							<button

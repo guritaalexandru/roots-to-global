@@ -14,12 +14,11 @@ export const BANNER_CONTENT = {
 };
 
 export const HOST_CONTENT = {
-	TITLE: 'Despre mine: Mihaela Reese, 15 ani experiență în dezvoltarea liderilor din Europa',
-	SUBTITLE: 'Radacinile nu sunt intr-un peisaj sau o tara sau oameni, ci sunt inlauntrul tau - Isabel Allende',
-	DESCRIPTION: 'Cred cu tarie ca fiecare cultura este buna in felul ei distinct. Cultura noastra ne-a dat lucruri unice și puncte forte remarcabile. Sunt Mihaela Reese si imi doresc sa iti arat cum sa iti intelegi radacinile si folosesti puterea pe care o ai la modul potrivit. Desi de 15 ani facilitez dezvoltarea liderilor din Europa, acest program este pentru orice experienta profesionala. \n' +
-		'In activitatea mea am observat cum multe din dificultățile liderilor veneau din faptul ca făceau lucruri normale la ei acasă dar neobisnuite în alte contexte și pentru oamenii din alte culture cu care interactionau. Conflicte, neintelegeri, excese, sau singuratate vin din aceste moduri diferite de a ne raporta la lumea in care traim.\n' +
-		'\n' +
-		'Acum cativa ani m-am mutat in Olanda impreuna co sotul meu (olandez). E adevărata zicala ca cel mai bun mod de a te cunoaște pe tine este sa trăiești în alta țară. Aceasta este cu atât mai adevărata când te căsătorești cu un partener dintr-o alta cultura. ',
+	TITLE: 'Despre mine: Mihaela Reese',
+	SUBTITLE: 'Cu peste 15 ani de experiență în facilitarea dezvoltării liderilor din Europa, sunt dedicată înțelegerii și valorizării diversității culturale.',
+	DESCRIPTION: 'Cred cu tărie că fiecare cultură are calitățile ei unice și, când înțelese corect, acestea pot deveni puncte forte în mediul profesional. \n \n' +
+		'În parcursul carierei mele, am identificat numeroase provocări pe care liderii le întâmpină din cauza diferențelor culturale. Multe dintre aceste dificultăți provin din neînțelegeri sau așteptări nealiniatе. Mi-am dedicat activitatea pentru a ajuta liderii să navigheze prin aceste provocări și să maximizeze potențialul lor într-un mediu globalizat. \n  \n' +
+		'Experiența mea personală de a mă muta în Olanda și de a mă căsători cu un partener dintr-o altă cultură m-a înzestrat cu o perspectivă unică asupra interacțiunilor interculturale. Acesta nu este doar un domeniu în care predau; este un domeniu pe care îl trăiesc zilnic.',
 	IMAGE_SRC: '/images/profile.jpeg',
 	IMAGE_ALT: 'Banner image',
 };
