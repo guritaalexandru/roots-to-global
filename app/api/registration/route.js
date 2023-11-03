@@ -11,8 +11,11 @@ const getRegistrationObjectFromBody = body => {
 		choice: body.choice,
 	};
 
-	if(!registrationObject.name || !registrationObject.email || !registrationObject.surname || !registrationObject.phone || !registrationObject.time || !registrationObject.choice) {
-		throw new Error('Missing registration data');
+	console.log('registrationObject', registrationObject);
+
+	if(!registrationObject.name || !registrationObject.email || !registrationObject.surname || !registrationObject.phone || !registrationObject.choice) {
+		const missingField = Object.keys(registrationObject).find(key => !registrationObject[key]);
+		throw new Error(`Missing registration data: ${missingField}`);
 	}
 
 	// if choice is not in the list of choices from the constants file, throw an error
