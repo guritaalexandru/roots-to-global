@@ -1,7 +1,7 @@
 import {connectToDatabase,} from '@/lib/mongodb.js';
 import {getAllObjects, getObjectById, postObject, updateObjectById,} from '@/js/utils/mongoMethods.js';
 
-const REGISTRATION_COLLECTION = 'registrations';
+const REGISTRATION_COLLECTION = process.env.DB_COLLECTION;
 
 const getCollection = async collectionName => {
 	const {database,} = await connectToDatabase();
