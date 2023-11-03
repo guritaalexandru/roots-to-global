@@ -1,5 +1,6 @@
 import { NextResponse, } from 'next/server';
 import { updateRegistrationById,} from '@/js/utils/serverCalls.js';
+import {sendEmail,} from '@/lib/sengrid.js';
 
 export async function POST(request) {
 	const { createMollieClient, } = require('@mollie/api-client');
@@ -17,6 +18,12 @@ export async function POST(request) {
 			paymentStatus: paymentStatus,
 		}
 	);
+
+	const registrationType = dbUpdateResponse?.choice;
+	if(false && paymentStatus === 'paid' && registrationType) {
+		const email = '';
+		await sendEmail(email, 'Test Email', 'This is a test email!');
+	}
 
 	return NextResponse.json({ message: 'Success', }, { status: 200, });
 }
