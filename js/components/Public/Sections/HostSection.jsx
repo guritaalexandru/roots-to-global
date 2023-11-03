@@ -18,12 +18,12 @@ function HostSection(props) {
 								height={ 1200 }
 							/>
 						</div>
-						<div className={ 'absolute rounded bottom-12 right-12 laptop:bottom-8 laptop:right-8 m-tablet:bottom-6 m-tablet:-right-6 tablet:bottom-4 tablet:-right-1 w-52 h-52 laptop:w-32 laptop:h-32 bg-main text-light-shade flex justify-center p-4 shadow-xl' }>
-							<div className={ 'self-center h-fit text-center' }>
-								<span className={ 'block text-[50px] laptop:text-[40px] font-bold text-center' }>15</span>
-								<span className={ 'block' }>Years of experience</span>
-							</div>
-						</div>
+						{/*<div className={ 'absolute rounded bottom-12 right-12 laptop:bottom-8 laptop:right-8 m-tablet:bottom-6 m-tablet:-right-6 tablet:bottom-4 tablet:-right-1 w-52 h-52 laptop:w-32 laptop:h-32 bg-main text-light-shade flex justify-center p-4 shadow-xl' }>*/}
+						{/*	<div className={ 'self-center h-fit text-center' }>*/}
+						{/*		<span className={ 'block text-[50px] laptop:text-[40px] font-bold text-center' }>15</span>*/}
+						{/*		<span className={ 'block' }>Years of experience</span>*/}
+						{/*	</div>*/}
+						{/*</div>*/}
 					</div>
 					<div className={ 'flex w-[55%] laptop:w-1/2 m-tablet:w-full' }>
 						<div className={ 'self-center h-fit pb-20 m-tablet:pb-0' }>
