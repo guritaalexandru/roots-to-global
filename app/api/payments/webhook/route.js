@@ -1,8 +1,7 @@
 import { NextResponse, } from 'next/server';
 import {getRegistrationById, updateRegistrationById,} from '@/js/utils/serverCalls.js';
 import {sendEmail,} from '@/lib/sengrid.js';
-import {REGISTRATION_TYPES,} from '@/js/utils/constants';
-import {getObjectById,} from '@/js/utils/mongoMethods';
+import {REGISTRATION_TYPES,} from '@/js/utils/constants.js';
 
 export async function POST(request) {
 	const { createMollieClient, } = require('@mollie/api-client');
