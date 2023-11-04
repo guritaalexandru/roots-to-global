@@ -28,22 +28,25 @@ export async function POST(request) {
 	const registrationType = registrationObject?.choice;
 	if(paymentStatus === 'paid' && registrationType) {
 		const {email, firstName,} = registrationObject;
-		let workshopNumber = '';
-		let workshopOrder = '';
+		let workshopText = '';
+		let calendarFile = '';
 
 		switch(registrationType) {
 			case REGISTRATION_TYPES.COMBO:
+				workshopText = 'Workshop-urile',
+				calendarFile = 'calendar-event.ics';
+				break;
 			case REGISTRATION_TYPES.WORKSHOP_1:
-				workshopNumber = '1';
-				workshopOrder = 'primul';
+				workshopText = 'Workshop-ul 1',
+				calendarFile = 'calendar-event.ics';
 				break;
 			case REGISTRATION_TYPES.WORKSHOP_2:
-				workshopNumber = '2';
-				workshopOrder = 'al doilea';
+				workshopText = 'Workshop-ul 2',
+				calendarFile = 'calendar-event.ics';
 				break;
 			case REGISTRATION_TYPES.WORKSHOP_3:
-				workshopNumber = '3';
-				workshopOrder = 'al treilea';
+				workshopText = 'Workshop-ul 3',
+				calendarFile = 'calendar-event.ics';
 				break;
 			default:
 				throw new Error('Invalid registration type');
@@ -51,8 +54,8 @@ export async function POST(request) {
 
 		const personalizationsObject = {
 			firstName,
-			workshopOrder,
-			workshopNumber,
+			workshopText,
+			calendarFile,
 		};
 
 		await sendEmail(email, personalizationsObject);
