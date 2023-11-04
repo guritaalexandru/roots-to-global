@@ -2,6 +2,7 @@ import './globals.css';
 import { Inter, } from 'next/font/google';
 import React from 'react';
 import { Analytics, } from '@vercel/analytics/react';
+import { GoogleTagManager, } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'], });
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children, }) {
 	return (
 		<html lang="en">
 			<head>
+				<GoogleTagManager gtmId="G-ZGJPLS6979" />
 				<link
 					rel="preconnect"
 					href="https://fonts.googleapis.com"/>
