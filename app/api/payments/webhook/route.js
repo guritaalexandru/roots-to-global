@@ -1,7 +1,8 @@
 import { NextResponse, } from 'next/server';
-import { updateRegistrationById,} from '@/js/utils/serverCalls.js';
+import {getRegistrationById, updateRegistrationById,} from '@/js/utils/serverCalls.js';
 import {sendEmail,} from '@/lib/sengrid.js';
 import {REGISTRATION_TYPES,} from '@/js/utils/constants';
+import {getObjectById,} from '@/js/utils/mongoMethods';
 
 export async function POST(request) {
 	const { createMollieClient, } = require('@mollie/api-client');
@@ -19,15 +20,15 @@ export async function POST(request) {
 			paymentStatus: paymentStatus,
 		}
 	);
-
 	if (!dbUpdateResponse) {
 		throw new Error('Registration not found');
 	}
 
-	const registrationType = dbUpdateResponse?.choice;
-	if(paymentStatus === 'paid' && registrationType) {
-		const {email, surname,} = dbUpdateResponse;
+	const registrationObject = await getRegistrationById(registrationId);
 
+	const registrationType = registrationObject?.choice;
+	if(paymentStatus === 'paid' && registrationType) {
+		const {email, firstName,} = registrationObject;
 		let workshopNumber = '';
 		let workshopOrder = '';
 
@@ -50,7 +51,7 @@ export async function POST(request) {
 		}
 
 		const personalizationsObject = {
-			'firstName': surname,
+			firstName,
 			workshopOrder,
 			workshopNumber,
 		};

@@ -4,16 +4,16 @@ import {REGISTRATION_TYPES,} from '@/js/utils/constants.js';
 
 const getRegistrationObjectFromBody = body => {
 	const registrationObject = {
-		name: body.name,
+		lastName: body.lastName,
 		email: body.email,
-		surname: body.surname,
+		firstName: body.firstName,
 		phone: body.phone,
 		choice: body.choice,
 	};
 
 	console.log('registrationObject', registrationObject);
 
-	if(!registrationObject.name || !registrationObject.email || !registrationObject.surname || !registrationObject.phone || !registrationObject.choice) {
+	if(!registrationObject.lastName || !registrationObject.email || !registrationObject.firstName || !registrationObject.phone || !registrationObject.choice) {
 		const missingField = Object.keys(registrationObject).find(key => !registrationObject[key]);
 		throw new Error(`Missing registration data: ${missingField}`);
 	}
@@ -84,9 +84,9 @@ export async function GET(request) {
 			{
 				message: 'Payment found',
 				paymentStatus: paymentStatus,
-				name: dbGetResponse.name,
+				lastName: dbGetResponse.lastName,
 				email: dbGetResponse.email,
-				surname: dbGetResponse.surname,
+				firstName: dbGetResponse.firstName,
 				registrationId: registrationId,
 			},
 			{ status: 200, });
