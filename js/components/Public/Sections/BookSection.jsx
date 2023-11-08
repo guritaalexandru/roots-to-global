@@ -160,7 +160,7 @@ function BookSection(props) {
 								{
 									sendingForm
 										? 'Se trimite...'
-										: '50 EUR - Înscrie-te la toate workshop-urile!'
+										: '290 EUR - Înscrie-te la toate workshop-urile!'
 								}
 							</button>
 							<button
@@ -170,7 +170,7 @@ function BookSection(props) {
 								{
 									sendingForm
 										? 'Se trimite...'
-										: '25 EUR - Înscrie-te la workshop-ul 1! \n 01.01.2000 - 8.00PM'
+										: '120 EUR - Înscrie-te la workshop-ul 1! \n 18.01.2024 - 8.00PM'
 								}
 							</button>
 							<button
@@ -180,7 +180,7 @@ function BookSection(props) {
 								{
 									sendingForm
 										? 'Se trimite...'
-										: '25 EUR - Înscrie-te la workshop-ul 2! \n 01.01.2000 - 8.00PM'
+										: '120 EUR - Înscrie-te la workshop-ul 2! \n 25.01.2024 - 8.00PM'
 								}
 							</button>
 							<button
@@ -190,7 +190,7 @@ function BookSection(props) {
 								{
 									sendingForm
 										? 'Se trimite...'
-										: '25 EUR - Înscrie-te la workshop-ul 3! \n 01.01.2000 - 8.00PM'
+										: '120 EUR - Înscrie-te la workshop-ul 3! \n 01.02.2024 - 8.00PM'
 								}
 							</button>
 						</div>
