@@ -8,6 +8,13 @@ import ConnectSection from '@/js/components/Public/Sections/ConnectSection.jsx';
 import AboutSection_T2 from '@/js/components/Public/Sections/AboutSection_T2.jsx';
 
 export default function Home() {
+	if(process.env.NEXT_PUBLIC_ENVIRONMENT === 'production'){
+		return (
+			<main className={ 'page-container relative' }>
+				Coming soon...
+			</main>
+		);
+	}
 	return (
 		<main className="page-container relative">
 			<Announcement />

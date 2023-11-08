@@ -3,6 +3,7 @@ import { Inter, } from 'next/font/google';
 import React from 'react';
 import { Analytics, } from '@vercel/analytics/react';
 import { GoogleTagManager, } from '@next/third-parties/google';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'], });
 
@@ -15,6 +16,9 @@ export default function RootLayout({ children, }) {
 	return (
 		<html lang="en">
 			<head>
+				<Script
+					src={ 'https://cdn-cookieyes.com/client_data/7bb86a14f6566c3a362e15cf/script.js' }>
+				</Script>
 				<GoogleTagManager gtmId="G-ZGJPLS6979" />
 				<link
 					rel="preconnect"
