@@ -40,7 +40,7 @@ export const ABOUT_CONTENT = {
 			IMAGE_ALT: 'Image 1',
 			TITLE: 'Pentru cine este?',
 			DESCRIPTION: '<ul>' +
-				'<li>Trăiești într-o alta țară decat Romania</li>' +
+				'<li>Trăiești într-o alta țară decât Romania</li>' +
 				'<li>Simți că ești diferit și vrei să te integrezi mai repede</li>' +
 				'<li>Vrei să ai succes în locul nou în care ești</li>' +
 			'</ul>',
@@ -78,11 +78,11 @@ export const ABOUT_CONTENT_T2 = {
 			NUMBER: 'Workshop 1',
 			TITLE: 'Tranziția, cultura noastra',
 			DESCRIPTION: '<ul>' +
-				'<li>Tranziția într-un mediu cultural nou, intr-o tara diferita</li>' +
-				'<li>Specificul culturii și educației în România si tiparele pe care le purtam cu noi</li>' +
+				'<li>Tranziția într-un mediu cultural nou, într-o țară diferită</li>' +
+				'<li>Specificul culturii și educației în România și tiparele pe care le purtam cu noi</li>' +
 				'<li>Așteptări personale, eșecuri culturale</li>' +
 				'<li>Despre singurătate</li>' +
-				'<li>Strategii pentru intelegerea nevoilor personale si solutii individualizate</li>' +
+				'<li>Strategii pentru întelegerea nevoilor personale și soluții individualizate</li>' +
 				'</ul>',
 		},
 		{
@@ -91,11 +91,11 @@ export const ABOUT_CONTENT_T2 = {
 			NUMBER: 'Workshop 2',
 			TITLE: 'Relația cu autoritatea, integrare sociala',
 			DESCRIPTION: '<ul>' +
-				'<li>Autoritatea in cultura noastra si cum ne influențează gândirea, comportamentul și interacțiunea cu ceilalti oameni</li>' +
-				'<li>Intelegerea diferentelor între culturi cand vine vorba de autoritate si relatii sociale</li>' +
+				'<li>Autoritatea în cultura noastră și cum ne influențează gândirea, comportamentul și interacțiunea cu ceilalți oameni</li>' +
+				'<li>Înțelegerea diferențelor între culturi când vine vorba de autoritate și relații sociale</li>' +
 				'<li>Gestionarea tiparelor personale în relația cu autoritatea</li>' +
-				'<li>Cum sa iti faci prieteni sau sa devii parte din diferite comunitati</li>' +
-				'<li>Strategii de comunicare si acțiune</li>' +
+				'<li>Cum să-ți faci prieteni sau să devii parte din diferite comunități</li>' +
+				'<li>Strategii de comunicare și acțiune</li>'+
 				'</ul>',
 		},
 		{
@@ -104,10 +104,10 @@ export const ABOUT_CONTENT_T2 = {
 			NUMBER: 'Workshop 3',
 			TITLE: 'Familie, planificare si relaxare',
 			DESCRIPTION: '<ul>' +
-				'<li>Intelegerea rolurilor in familie si a mostenirilor culturale</li>' +
-				'<li>Strategii pentru o atitudine echitabila intr-o cultura diferita</li>' +
+				'<li>Înțelegerea rolurilor în familie și a moștenirilor culturale</li>' +
+				'<li>Strategii pentru o atitudine echitabilă într-o cultură diferită</li>' +
 				'<li>Permisivitatea, control social și restricțiile culturale</li>' +
-				'<li>Strategii pentru integrare de success</li>' +
+				'<li>Strategii pentru integrare de succes</li>' +
 				'</ul>',
 		}
 	],
