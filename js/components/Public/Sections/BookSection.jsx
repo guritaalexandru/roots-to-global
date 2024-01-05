@@ -155,42 +155,33 @@ function BookSection(props) {
 						<div className={ 'grid grid-cols-3 tablet:grid-cols-1 grid-rows-4 gap-2' }>
 							<button
 								type="submit"
-								id={ REGISTRATION_TYPES.COMBO }
+								id={ REGISTRATION_TYPES.WORKSHOP_1 }
+								disabled={ true }
 								className="main-button-register col-span-3 tablet:col-span-1">
 								{
 									sendingForm
-										? 'Se trimite...'
-										: '290 EUR - Înscrie-te la toate workshop-urile!'
-								}
-							</button>
-							<button
-								type="submit"
-								id={ REGISTRATION_TYPES.WORKSHOP_1 }
-								className="main-button-register">
-								{
-									sendingForm
-										? 'Se trimite...'
-										: '120 EUR - Înscrie-te la workshop-ul 1! \n 18.01.2024 - 8.00PM'
+										? <div>Se trimite...</div>
+										: (
+											<div>
+												<div>35 EUR - Înscrie-te la Workshop-ul 1! Locuri epuizate!</div>
+												<div>05.02.2024 - 8.00PM</div>
+											</div>
+										)
 								}
 							</button>
 							<button
 								type="submit"
 								id={ REGISTRATION_TYPES.WORKSHOP_2 }
-								className="main-button-register">
+								className="main-button-register col-span-3 tablet:col-span-1">
 								{
 									sendingForm
-										? 'Se trimite...'
-										: '120 EUR - Înscrie-te la workshop-ul 2! \n 25.01.2024 - 8.00PM'
-								}
-							</button>
-							<button
-								type="submit"
-								id={ REGISTRATION_TYPES.WORKSHOP_3 }
-								className="main-button-register">
-								{
-									sendingForm
-										? 'Se trimite...'
-										: '120 EUR - Înscrie-te la workshop-ul 3! \n 01.02.2024 - 8.00PM'
+										? <div>Se trimite...</div>
+										: (
+											<div>
+												<div>35 EUR - Înscrie-te la Workshop-ul 2!</div>
+												<div>05.03.2024 - 8.00PM</div>
+											</div>
+										)
 								}
 							</button>
 						</div>

@@ -25,10 +25,11 @@ export const HOST_CONTENT = {
 
 export const CONNECT_CONTENT = {
 	TITLE: 'Connect with me',
-	FACEBOOK_LINK: 'https://www.facebook.com/',
-	LINKEDIN_LINK: 'https://www.linkedin.com/',
-	WHATSAPP_NUMBER: '(+40) 721 234 567',
-	EMAIL: 'yourmail@mail.com',
+	FACEBOOK_LINK: 'https://www.facebook.com/delaculturalasucces',
+	LINKEDIN_LINK: 'https://www.linkedin.com/in/mihaelareese/',
+	INSTAGRAM_LINK: 'https://www.instagram.com/mihaelareese/',
+	WHATSAPP_NUMBER: '0031634351257',
+	EMAIL: 'hello@fromyourroots.com',
 };
 
 export const ABOUT_CONTENT = {
@@ -70,13 +71,13 @@ export const ABOUT_CONTENT = {
 };
 
 export const ABOUT_CONTENT_T2 = {
-	TITLE: 'Ce vom discuta împreună?',
+	TITLE: 'SOLD OUT: Workshop 1: Tranziția, cultura noastră',
 	T2_CARDS: [
 		{
 			IMAGE_SRC: '/images/4.jpg',
 			IMAGE_ALT: 'Image 1',
 			NUMBER: 'Workshop 1',
-			TITLE: 'Tranziția, cultura noastra',
+			TITLE: 'Tranziția, cultura noastră',
 			DESCRIPTION: '<ul>' +
 				'<li>Tranziția într-un mediu cultural nou, într-o țară diferită</li>' +
 				'<li>Specificul culturii și educației în România și tiparele pe care le purtam cu noi</li>' +
@@ -84,30 +85,41 @@ export const ABOUT_CONTENT_T2 = {
 				'<li>Despre singurătate</li>' +
 				'<li>Strategii pentru întelegerea nevoilor personale și soluții individualizate</li>' +
 				'</ul>',
-		},
+		}
+	],
+};
+
+export const ABOUT_CONTENT_T3 = {
+	TITLE: 'Workshop 1: Tranziția, cultura noastră',
+	T2_CARDS: [
 		{
 			IMAGE_SRC: '/images/5.jpg',
-			IMAGE_ALT: 'Image 1',
+			IMAGE_ALT: 'Image 2',
 			NUMBER: 'Workshop 2',
-			TITLE: 'Relația cu autoritatea, integrare sociala',
-			DESCRIPTION: '<ul>' +
-				'<li>Autoritatea în cultura noastră și cum ne influențează gândirea, comportamentul și interacțiunea cu ceilalți oameni</li>' +
-				'<li>Înțelegerea diferențelor între culturi când vine vorba de autoritate și relații sociale</li>' +
-				'<li>Gestionarea tiparelor personale în relația cu autoritatea</li>' +
-				'<li>Cum să-ți faci prieteni sau să devii parte din diferite comunități</li>' +
-				'<li>Strategii de comunicare și acțiune</li>'+
-				'</ul>',
-		},
+			TITLE: 'Tranziția, cultura noastra',
+			DESCRIPTION: '<p>Știm că pentru fiecare dintre noi, succesul într-o nouă țară vine cu provocări și învățături specifice.</p>' +
+				'\n' +
+				'<p>Workshop-ul nostru te îndeamnă să descoperi cum să-ți găsești succesul într-un mod autentic în noua ta casă. Vom explora împreună elementele definitorii ale succesului, definiția lui în contextul culturii românești, și vom învăța cum să navigăm cu înțelepciune prin diferențele culturale specifice Europei.</p>' +
+				'\n' +
+				'<p>În acest workshop nu vorbim despre integrare ci despre cum sa folosești potențialul tău într-un mediu care judeca și înțelege succesul în moduri diferite. Te invităm să descoperi cu noi cum sa Reușești!</p>',
+		}
+	],
+};
+
+export const ABOUT_CONTENT_T4 = {
+	TITLE: 'Workshop 1: Tranziția, cultura noastră',
+	T2_CARDS: [
 		{
 			IMAGE_SRC: '/images/6.jpg',
-			IMAGE_ALT: 'Image 1',
-			NUMBER: 'Workshop 3',
-			TITLE: 'Familie, planificare si relaxare',
+			IMAGE_ALT: 'Image 2',
+			NUMBER: 'Workshop 2',
+			TITLE: 'Tranziția, cultura noastra',
 			DESCRIPTION: '<ul>' +
-				'<li>Înțelegerea rolurilor în familie și a moștenirilor culturale</li>' +
-				'<li>Strategii pentru o atitudine echitabilă într-o cultură diferită</li>' +
-				'<li>Permisivitatea, control social și restricțiile culturale</li>' +
-				'<li>Strategii pentru integrare de succes</li>' +
+				'<li>Tranziția într-un mediu cultural nou, într-o țară diferită</li>' +
+				'<li>Specificul culturii și educației în România și tiparele pe care le purtam cu noi</li>' +
+				'<li>Așteptări personale, eșecuri culturale</li>' +
+				'<li>Despre singurătate</li>' +
+				'<li>Strategii pentru întelegerea nevoilor personale și soluții individualizate</li>' +
 				'</ul>',
 		}
 	],

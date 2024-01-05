@@ -22,7 +22,15 @@ function ConnectSection(props) {
 						<a href={ CONNECT_CONTENT.LINKEDIN_LINK }>
 							<Image
 								src={ '/SVGs/linkedin.svg' }
-								alt={ 'Facebook icon' }
+								alt={ 'LinkedIn icon' }
+								width={ 50 }
+								height={ 50 }
+							/>
+						</a>
+						<a href={ CONNECT_CONTENT.INSTAGRAM_LINK }>
+							<Image
+								src={ '/SVGs/instagram.svg' }
+								alt={ 'Instagram icon' }
 								width={ 50 }
 								height={ 50 }
 							/>
