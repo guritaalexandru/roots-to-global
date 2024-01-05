@@ -90,7 +90,7 @@ export const ABOUT_CONTENT_T2 = {
 };
 
 export const ABOUT_CONTENT_T3 = {
-	TITLE: 'Workshop 1: Tranziția, cultura noastră',
+	TITLE: 'Workshop 2: Tranziția, cultura noastră',
 	T2_CARDS: [
 		{
 			IMAGE_SRC: '/images/5.jpg',
@@ -107,7 +107,7 @@ export const ABOUT_CONTENT_T3 = {
 };
 
 export const ABOUT_CONTENT_T4 = {
-	TITLE: 'Workshop 1: Tranziția, cultura noastră',
+	TITLE: 'Mai multe informații',
 	T2_CARDS: [
 		{
 			IMAGE_SRC: '/images/6.jpg',
