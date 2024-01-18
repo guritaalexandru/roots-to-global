@@ -171,7 +171,7 @@ function BookSection(props) {
 							{/*</button>*/}
 							<button
 								type="submit"
-								id={ REGISTRATION_TYPES.WORKSHOP_2 }
+								id={ REGISTRATION_TYPES.WORKSHOP_1 }
 								className="main-button-register col-span-3 tablet:col-span-1">
 								{
 									sendingForm
