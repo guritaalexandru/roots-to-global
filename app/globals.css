@@ -31,7 +31,7 @@
     @apply text-justify whitespace-break-spaces;
   }
   ul {
-    @apply pl-6 space-y-1.5;
+    @apply pl-6 space-y-1.5 pb-2;
   }
   button {
     @apply text-[18px] laptop:text-[14px];

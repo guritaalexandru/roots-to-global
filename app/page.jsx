@@ -23,8 +23,8 @@ export default function Home() {
 			<BannerSection />
 			<AboutSection />
 			<HostSection />
-			<AboutSection_T2 />
-			<AboutSection_T3 />
+			{/*<AboutSection_T2 />*/}
+			{/*<AboutSection_T3 />*/}
 			<AboutSection_T4 />
 			<BookSection />
 			<ConnectSection />

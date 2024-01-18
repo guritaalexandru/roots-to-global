@@ -37,6 +37,14 @@ function AboutSection(props) {
 											</h3>
 											<div className={ 'disc' }>{parse(card.DESCRIPTION)}</div>
 										</div>
+										{
+											card.BUTTON_TEXT && card.BUTTON_LINK &&
+											<div className={ 'mt-4' }>
+												<a href={ card.BUTTON_LINK }>
+													<button className="main-button-register">{card.BUTTON_TEXT}</button>
+												</a>
+											</div>
+										}
 									</div>
 								);
 							})}

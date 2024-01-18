@@ -125,7 +125,7 @@ function BookSection(props) {
 								{'Am citit și sunt de acord cu '}
 								<a
 									target="_blank"
-									href={ '/termeni-si-conditii' }
+									href={ '/Termeni_si_conditii.pdf' }
 									className="underline"
 									rel="noreferrer">
 									termenii și condițiile
@@ -145,7 +145,7 @@ function BookSection(props) {
 								{'Am citit și sunt de acord cu '}
 								<a
 									target="_blank"
-									href={ '/gdpr' }
+									href={ '/Politica_de_confidentialitate.pdf' }
 									className="underline"
 									rel="noreferrer">
 									politica de confidențialitate
@@ -153,22 +153,22 @@ function BookSection(props) {
 							</label>
 						</div>
 						<div className={ 'grid grid-cols-3 tablet:grid-cols-1 grid-rows-4 gap-2' }>
-							<button
-								type="submit"
-								id={ REGISTRATION_TYPES.WORKSHOP_1 }
-								disabled={ true }
-								className="main-button-register col-span-3 tablet:col-span-1">
-								{
-									sendingForm
-										? <div>Se trimite...</div>
-										: (
-											<div>
-												<div>35 EUR - Înscrie-te la Workshop-ul 1! Locuri epuizate!</div>
-												<div>05.02.2024 - 8.00PM</div>
-											</div>
-										)
-								}
-							</button>
+							{/*<button*/}
+							{/*	type="submit"*/}
+							{/*	id={ REGISTRATION_TYPES.WORKSHOP_1 }*/}
+							{/*	disabled={ true }*/}
+							{/*	className="main-button-register col-span-3 tablet:col-span-1">*/}
+							{/*	{*/}
+							{/*		sendingForm*/}
+							{/*			? <div>Se trimite...</div>*/}
+							{/*			: (*/}
+							{/*				<div>*/}
+							{/*					<div>35 EUR - Înscrie-te la Workshop-ul 1! Locuri epuizate!</div>*/}
+							{/*					<div>05.02.2024 - 8.00PM</div>*/}
+							{/*				</div>*/}
+							{/*			)*/}
+							{/*	}*/}
+							{/*</button>*/}
 							<button
 								type="submit"
 								id={ REGISTRATION_TYPES.WORKSHOP_2 }
@@ -178,8 +178,8 @@ function BookSection(props) {
 										? <div>Se trimite...</div>
 										: (
 											<div>
-												<div>35 EUR - Înscrie-te la Workshop-ul 2!</div>
-												<div>05.03.2024 - 8.00PM</div>
+												<div>35 EUR - Înscrie-te la Workshop!</div>
+												<div>05.03.2024 - 19.00 CET</div>
 											</div>
 										)
 								}

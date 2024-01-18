@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function AboutSection_T4(props) {
 	return (
-		<section id={ 'AboutSection' }>
+		<section id={ 'WorshopSection' }>
 			<div className={ 'bg-dark-shade text-light-shade' }>
 				<div className={ 'content-container py-14' }>
 					<h2 className={ 'text-center' }>
