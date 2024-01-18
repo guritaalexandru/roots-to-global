@@ -103,7 +103,7 @@ export const ABOUT_CONTENT_T3 = {
 };
 
 export const ABOUT_CONTENT_T4 = {
-	TITLE: 'Workshop: Tranziția, cultura noastră',
+	TITLE: 'Workshop: Definiția succesului',
 	T2_CARDS: [
 		{
 			IMAGE_SRC: '/images/6.jpg',
