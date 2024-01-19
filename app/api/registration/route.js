@@ -33,12 +33,12 @@ const handlePayment = async (registrationId, registrationType) => {
 	let amount = '';
 	switch(registrationType) {
 		case REGISTRATION_TYPES.COMBO:
-			amount = '290.00';
+			amount = '35.00';
 			break;
 		case REGISTRATION_TYPES.WORKSHOP_1:
 		case REGISTRATION_TYPES.WORKSHOP_2:
 		case REGISTRATION_TYPES.WORKSHOP_3:
-			amount = '1.00';
+			amount = '35.00';
 			break;
 		default:
 			throw new Error('Invalid registration type');
