@@ -23,12 +23,12 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20240119T081519Z
+DTSTAMP:20240119T082509Z
 UID:1699115352878-30279@ical.marudot.com
-DTSTART;TZID=Europe/Helsinki:20240305T180000
+DTSTART;TZID=Europe/Helsinki:20240305T190000
 DTEND;TZID=Europe/Helsinki:20240305T200000
-SUMMARY:Workshop - De la cultura la succes! 18.00 - Central European Time
-DESCRIPTION:Workshop-ul va fi găzduit la ora 18.00CET! Asigură-te ca această oră corespunde cu fusul tău orar în calendar.\nWorkshop-ul va fi găzduit pe Zoom
+SUMMARY:Workshop - De la cultura la succes! 19.00 - Central European Time
+DESCRIPTION:Workshop-ul va fi găzduit la ora 19.00CET! Asigură-te ca această oră corespunde cu fusul tău orar în calendar.\nWorkshop-ul va fi găzduit pe Zoom
 LOCATION:Zoom
 END:VEVENT
 END:VCALENDAR
