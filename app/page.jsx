@@ -10,13 +10,6 @@ import AboutSection_T3 from '@/js/components/Public/Sections/AboutSection_T3';
 import AboutSection_T4 from '@/js/components/Public/Sections/AboutSection_T4';
 
 export default function Home() {
-	if(process.env.NEXT_PUBLIC_ENVIRONMENT === 'production'){
-		return (
-			<main className={ 'page-container relative' }>
-				Coming soon...
-			</main>
-		);
-	}
 	return (
 		<main className="page-container relative">
 			<Announcement />
