@@ -27,8 +27,8 @@ DTSTAMP:20240119T082509Z
 UID:1699115352878-30279@ical.marudot.com
 DTSTART;TZID=Europe/Helsinki:20240305T190000
 DTEND;TZID=Europe/Helsinki:20240305T200000
-SUMMARY:Workshop - De la cultura la succes! 19.00 - Central European Time
-DESCRIPTION:Workshop-ul va fi găzduit la ora 19.00CET! Asigură-te ca această oră corespunde cu fusul tău orar în calendar.\nWorkshop-ul va fi găzduit pe Zoom
+SUMMARY:De la cultura la succes - Definitia succesului! 19.00 - Central European Time
+DESCRIPTION:Evenimentul va fi găzduit la ora 19.00CET! Asigură-te ca această oră corespunde cu fusul tău orar în calendar.\nEvenimentul va fi găzduit pe Zoom
 LOCATION:Zoom
 END:VEVENT
 END:VCALENDAR

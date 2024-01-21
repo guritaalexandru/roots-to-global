@@ -37,7 +37,7 @@ export async function POST(request) {
 				calendarFile = 'calendar-event.ics';
 				break;
 			case REGISTRATION_TYPES.WORKSHOP_1:
-				workshopText = 'Workshop-ul 1',
+				workshopText = '"Definitia succesului"',
 				calendarFile = 'calendar-event.ics';
 				break;
 			case REGISTRATION_TYPES.WORKSHOP_2:
